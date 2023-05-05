@@ -11,8 +11,23 @@
     <link rel="stylesheet" href="styles/icofont.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Резюме</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="Резюме">
+    <meta property="og:type" content="video.movie">
+    <meta property="og:url" content="/">
+    <meta property="og:image" content="img/avatar.jpeg">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 <body>
+    <!-- Popup window -->
+    <div class="popup-window-background">
+        <div class="popup-window">
+            <h3 class="title-window"></h3>
+            <i class="icofont-close close-window-button"></i>
+            <div class="content-window"></div>
+        </div>
+    </div>
     <!-- Main -->
     <div class="main">
         <!-- Language -->
@@ -30,77 +45,89 @@
             </div>
             <!-- Projects -->
             <div class="projects">
-                <h3 class="content-title">Проекти</h3>
+                <h3 class="content-title" data-language="projects"></h3>
                 <ol class="projects-list">
                     <li class="projects-item">
                         <div class="projects-item-flex">
-                            <a href="https://lada.npucenter.lviv.ua/" class="projects-link"><span class="projects-text">https://lada.npucenter.lviv.ua/</span></a>
-                            <span class="projects-text"><span class="projects-bracket">[ </span>Тестове завдання "LADA"<span class="projects-bracket"> ]</span></span>
+                            <a href="https://lada.npucenter.lviv.ua/" class="projects-link" target="_blank"><span class="projects-text">https://lada.npucenter.lviv.ua/</span></a>
+                            <span class="projects-text"><span class="projects-bracket">[ </span><span data-language="projects1"></span><span class="projects-bracket"> ]</span></span>
                         </div>
                     </li>
                     <li class="projects-item">
                         <div class="projects-item-flex">
-                            <a href="https://npucenter.lviv.ua/" class="projects-link"><span class="projects-text">https://npucenter.lviv.ua/</span></a>
-                            <span class="projects-text"><span class="projects-bracket">[ </span>Сайт місця роботи "ЛННЦ ПО"<span class="projects-bracket"> ]</span></span>
+                            <a href="https://npucenter.lviv.ua/" class="projects-link" target="_blank"><span class="projects-text">https://npucenter.lviv.ua/</span></a>
+                            <span class="projects-text"><span class="projects-bracket">[ </span><span data-language="projects2"></span><span class="projects-bracket"> ]</span></span>
                         </div>
                     </li>
                     <li class="projects-item">
                         <div class="projects-item-flex">
-                            <a href="https://npucenter.lviv.ua/livebook/" class="projects-link"><span class="projects-text">https://npucenter.lviv.ua/livebook/</span></a>
-                            <span class="projects-text"><span class="projects-bracket">[ </span>Платформа "LIVEBOOK"<span class="projects-bracket"> ]</span></span>
+                            <a href="https://npucenter.lviv.ua/livebook/" class="projects-link" target="_blank"><span class="projects-text">https://npucenter.lviv.ua/livebook/</span></a>
+                            <span class="projects-text"><span class="projects-bracket">[ </span><span data-language="projects3"></span><span class="projects-bracket"> ]</span></span>
                         </div>
                     </li>
                     <li class="projects-item">
                         <div class="projects-item-flex">
-                            <a href="https://levramgroup.com/" class="projects-link"><span class="projects-text">https://levramgroup.com/</span></a>
-                            <span class="projects-text"><span class="projects-bracket">[ </span>Сайт компанії писав під замовлення "LEVRAMGROUP"<span class="projects-bracket"> ]</span></span>
+                            <a href="https://levramgroup.com/" class="projects-link" target="_blank"><span class="projects-text">https://levramgroup.com/</span></a>
+                            <span class="projects-text"><span class="projects-bracket">[ </span><span data-language="projects4"></span><span class="projects-bracket"> ]</span></span>
+                        </div>
+                    </li>
+                    <li class="projects-item">
+                        <div class="projects-item-flex">
+                            <a href="https://greisen-stone.com/" class="projects-link" target="_blank"><span class="projects-text">https://greisen-stone.com/</span></a>
+                            <span class="projects-text"><span class="projects-bracket">[ </span><span data-language="projects5"></span><span class="projects-bracket"> ]</span></span>
+                        </div>
+                    </li>
+                    <li class="projects-item">
+                        <div class="projects-item-flex">
+                            <a href="https://monica-marketing.com.ua/" class="projects-link" target="_blank"><span class="projects-text">https://monica-marketing.com.ua/</span></a>
+                            <span class="projects-text"><span class="projects-bracket">[ </span><span data-language="projects6"></span><span class="projects-bracket"> ]</span></span>
                         </div>
                     </li>
                 </ol>
             </div>
             <!-- Work -->
             <div class="work">
-                <h3 class="content-title">Досвід роботи</h3>
+                <h3 class="content-title" data-language="experience"></h3>
                 <!-- Company 1 -->
                 <div>
-                    <h4 class="content-under-title">Львівський навчально-науковий центр професійної освіти<span class="content-color"> не повна зайнятість</span></h4>
-                    <p class="period">Вересень 2017 - по сьогодні<span class="content-separator">|</span>Україна</p>
+                    <h4 class="content-under-title"><span data-language="company1"></span><span class="content-color" data-language="position1"></span></h4>
+                    <p class="period"><span data-language="companyDate1"></span><span class="content-separator">|</span><span data-language="ukraine"></span></p>
                     <ul class="work-list">
-                        <li class="work-item">Створення дизайн проєктів.</li>
-                        <li class="work-item">Обслуговування ПК (Windows, Linux) та технічна консультація працівників.</li>
-                        <li class="work-item">Створення логотипів та обкладинків на документи.</li>
-                        <li class="work-item">Створення та підтримка сайту.</li>
-                        <li class="work-item">Прийом студентів на навчання.</li>
-                        <li class="work-item">Створення платформи "LIVEBOOK" та її технічна підтримка для проведення курсів підвищення кваліфікації.</li>
+                        <li class="work-item" data-language="work1item1"></li>
+                        <li class="work-item" data-language="work1item2"></li>
+                        <li class="work-item" data-language="work1item3"></li>
+                        <li class="work-item" data-language="work1item4"></li>
+                        <li class="work-item" data-language="work1item5"></li>
+                        <li class="work-item" data-language="work1item6"></li>
                     </ul>
                 </div>
             </div>
             <!-- Education -->
             <div class="education">
-                <h3 class="content-title">Освіта</h3>
+                <h3 class="content-title" data-language="education"></h3>
                 <!-- Education 1 -->
                 <div>
-                    <h4 class="content-under-title"><span class="content-color">Курси</span></h4>
-                    <h5 class="education-specialty">Живописець</h5>
-                    <p class="period">Вересень 2012 - Червень 2013<span class="content-separator">|</span>Україна</p>
+                    <h4 class="content-under-title"><span class="content-color" data-language="education1"></span></h4>
+                    <h5 class="education-specialty" data-language="educationSpecialty1"></h5>
+                    <p class="period"><span data-language="educationData1"></span><span class="content-separator">|</span><span data-language="ukraine"></span></p>
                 </div>
                 <!-- Education 2 -->
                 <div>
-                    <h4 class="content-under-title"><span class="content-color">ЛВПХУ</span></h4>
-                    <h5 class="education-specialty">Живописець</h5>
-                    <p class="period">Вересень 2013 - Червень 2015<span class="content-separator">|</span>Україна</p>
+                    <h4 class="content-under-title"><span class="content-color" data-language="education2"></span></h4>
+                    <h5 class="education-specialty" data-language="educationSpecialty2"></h5>
+                    <p class="period"><span data-language="educationData2"></span><span class="content-separator">|</span><span data-language="ukraine"></span></p>
                 </div>
                 <!-- Education 3 -->
                 <div>
-                    <h4 class="content-under-title"><span class="content-color">ЛВПХУ</span></h4>
-                    <h5 class="education-specialty">Дизайнер</h5>
-                    <p class="period">Вересень 2015 - Червень 2017<span class="content-separator">|</span>Україна</p>
+                    <h4 class="content-under-title"><span class="content-color" data-language="education3"></span></h4>
+                    <h5 class="education-specialty" data-language="educationSpecialty3"></h5>
+                    <p class="period"><span data-language="educationData3"></span><span class="content-separator">|</span><span data-language="ukraine"></span></p>
                 </div>
-                <!-- Education 3 -->
+                <!-- Education 4 -->
                 <div>
-                    <h4 class="content-under-title"><span class="content-color">Національний педагогічний університет імені М.П.Драгоманова</span></h4>
-                    <h5 class="education-specialty">015 Дизайнер. Педагог професійного навчання</h5>
-                    <p class="period">Вересень 2018 - Червень 2020<span class="content-separator">|</span>Україна</p>
+                    <h4 class="content-under-title"><span class="content-color"  data-language="education4"></span></h4>
+                    <h5 class="education-specialty" data-language="educationSpecialty4"></h5>
+                    <p class="period"><span data-language="educationData4"></span><span class="content-separator">|</span><span data-language="ukraine"></span></p>
                 </div>
             </div>
         </div>
@@ -109,7 +136,7 @@
             <img src="img/avatar.jpeg" alt="Фотографія користувача" class="photo">
             <!-- Contacts -->
             <div class="contacts">
-                <h3 class="sidebar-title">Контакти</h3>
+                <h3 class="sidebar-title" data-language="contacts"></h3>
                 <div>
                     <p>
                         <span class="contact-type"><i class="icofont-ui-call"></i></span>
@@ -123,7 +150,7 @@
             </div>
             <!-- Tech skills -->
             <div class="tech-skills">
-                <h3 class="sidebar-title">Технічні навички</h3>
+                <h3 class="sidebar-title" data-language="techSkills"></h3>
                 <ul class="skills-list">
                     <li class="skills-item"><samp class="skills-text">HTML5</samp></li>
                     <li class="skills-item"><samp class="skills-text">CSS3</samp></li>
@@ -131,7 +158,7 @@
                     <li class="skills-item"><samp class="skills-text">PHP</samp></li>
                     <li class="skills-item"><samp class="skills-text">MYSQL</samp></li>
                 </ul>
-                <h3 class="sidebar-title-min">Бібліотеки</h3>
+                <h3 class="sidebar-title-min" data-language="libraries"></h3>
                 <ul class="skills-list">
                     <li class="skills-item"><samp class="skills-text">jQuery</samp></li>
                     <li class="skills-item"><samp class="skills-text">Slick</samp></li>
@@ -139,19 +166,19 @@
                     <li class="skills-item"><samp class="skills-text">Wow animate</samp></li>
                     <li class="skills-item"><samp class="skills-text">Bootstrap</samp></li>
                 </ul>
-                <h3 class="sidebar-title-min">CMS системи</h3>
+                <h3 class="sidebar-title-min" data-language="CMSsystems"></h3>
                 <ul class="skills-list">
-                    <li class="skills-item"><samp class="skills-text">Wordpress<i class="icofont-comment popup-window-button"></i></samp></li>
-                    <li class="skills-item"><samp class="skills-text">OpenCart<i class="icofont-comment popup-window-button"></i></samp></li>
+                    <li class="skills-item"><samp class="skills-text">Wordpress<i class="icofont-comment popup-window-button" data-content="wordpress"></i></samp></li>
+                    <li class="skills-item"><samp class="skills-text">OpenCart<i class="icofont-comment popup-window-button" data-content="openCart"></i></samp></li>
                 </ul>
-                <h3 class="sidebar-title-min">Платформи</h3>
+                <h3 class="sidebar-title-min" data-language="platforms"></h3>
                 <ul class="skills-list">
                     <li class="skills-item"><samp class="skills-text">Windows</samp></li>
                     <li class="skills-item"><samp class="skills-text">Linux</samp></li>
                     <li class="skills-item"><samp class="skills-text">Android</samp></li>
                     <li class="skills-item"><samp class="skills-text">Git Hub</samp></li>
                 </ul>
-                <h3 class="sidebar-title-min">Софт</h3>
+                <h3 class="sidebar-title-min" data-language="soft"></h3>
                 <ul class="skills-list">
                     <li class="skills-item"><samp class="skills-text">FileZilla FTP</samp></li>
                     <li class="skills-item"><samp class="skills-text">Open Server</samp></li>
@@ -186,5 +213,6 @@
     <script  type="text/javascript" src="language/uk.js"></script>
     <script  type="text/javascript" src="language/en.js"></script>
     <script  type="text/javascript" src="js/language.js"></script>
+    <script  type="text/javascript" src="js/popup-window.js"></script>
 </body>
 </html>

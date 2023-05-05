@@ -1,12 +1,12 @@
 // Language
-
+let languageTrue = '';
 function language(lang = uk) {
-let language = document.querySelectorAll('[data-language]');
+	languageTrue = lang;
+	let language = document.querySelectorAll('[data-language]');
 	for(let i = 0; i < language.length; i++){
 		let text = lang[language[i].dataset.language]; 
-		language[i].textContent = (text != undefined) ? text : 'Не має пркладу.';
+		language[i].textContent = (text != undefined) ? text : 'Не має перекладу.';
 	}
-
 }
 
 language();
