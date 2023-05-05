@@ -117,3 +117,18 @@ class Life {
 
 const life = new Life();
 life.start();
+
+
+
+const mainContent = document.querySelector('.main-content');
+const photo = document.querySelector('.photo');
+
+photo.onclick = function() {
+	if (this.style.borderColor == '') {
+		this.style = 'border-color: #fff;';
+		mainContent.style = 'background-color: #ffffff00;';
+	}else {
+		this.style = '';
+		mainContent.style = '';
+	}
+}
