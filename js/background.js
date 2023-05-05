@@ -37,7 +37,7 @@ class Life {
 	}
 	draw()
 	{
-		this.ctx.shadowColor = '#FB6D3A';
+		this.ctx.shadowColor = '#000';
 		this.ctx.shadowBlur = 2;
 		
 		
@@ -46,9 +46,9 @@ class Life {
 			this.ctx.fillRect(this.positionElement[i].x-this.elwc, this.positionElement[i].y-this.elhc, this.elw, this.elh);
 		}
 		
-		this.ctx.shadowColor = '#FB6D3A';
+		this.ctx.shadowColor = '#000';
 		this.ctx.shadowBlur = 0;
-		this.ctx.fillStyle = 'rgb(229 229 229 / 5%)';
+		this.ctx.fillStyle = 'rgb(255 255 255 / 5%)';
 		this.ctx.fillRect(0, 0, this.w, this.h);
 	}
 	move()
