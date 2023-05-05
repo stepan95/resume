@@ -39,6 +39,26 @@ const en = {
 	CMSsystems: 'CMS systems',
 	platforms: 'Platforms',
 	soft: 'Soft',
-	wordpress: 'wordpress',
-	openCart: 'open cart',
+	wordpress: `
+	<p>My skills: site optimization, writing themes, editing existing themes, multilingual sites and so on. </p>
+	<h3>Plugins</h3>
+	<ul>
+		<li><p>Advanced Custom Fields</p></li>
+		<li><p>Contact Form 7</p></li>
+		<li><p>Polylang</p></li>
+		<li><p>Duplicator</p></li>
+		<li><p>WP Rocket</p></li>
+		<li><p>Yoast SEO Premium</p></li>
+	</ul>
+	`,
+	openCart: `
+	<p>My skills: site optimization, writing themes, editing existing themes, multilingual sites and so on. </p>
+	<h3>Expansion</h3>
+	<ul>
+		<li><p>Language packs</p></li>
+		<li><p>Seo pro</p></li>
+		<li><p>Localcopy</p></li>
+		<li><p>Export Import</p></li>
+	</ul>
+	`,
 };

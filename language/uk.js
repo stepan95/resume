@@ -39,6 +39,26 @@ const uk = {
 	CMSsystems: 'CMS системи',
 	platforms: 'Платформи',
 	soft: 'Софт',
-	wordpress: 'wordpress',
-	openCart: 'open cart',
+	wordpress: `
+	<p>Мої навики: оптимізація сайту, написання тем, редагування існуючих тем, мультиязичність сайтів і так далі. </p>
+	<h3>Плагіни</h3>
+	<ul>
+		<li><p>Advanced Custom Fields</p></li>
+		<li><p>Contact Form 7</p></li>
+		<li><p>Polylang</p></li>
+		<li><p>Duplicator</p></li>
+		<li><p>WP Rocket</p></li>
+		<li><p>Yoast SEO Premium</p></li>
+	</ul>
+	`,
+	openCart: `
+	<p>Мої навики: оптимізація сайту, написання тем, редагування існуючих тем, мультиязичність сайтів і так далі. </p>
+	<h3>Розширення</h3>
+	<ul>
+		<li><p>Мовні пакети</p></li>
+		<li><p>Seo pro</p></li>
+		<li><p>Localcopy</p></li>
+		<li><p>Export Import</p></li>
+	</ul>
+	`,
 };
