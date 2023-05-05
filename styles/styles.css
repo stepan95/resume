@@ -375,3 +375,19 @@ body {
     overflow: auto;
     max-height: 300px;
 }
+
+.content-window ul{
+    color: #FB6D3A;
+}
+
+.content-window li{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FB6D3A;
+}
+
+.content-window p{
+    color: #000;
+}
