@@ -19,15 +19,15 @@ class Life {
 		this.elhc = this.elh /2;
 		this.directionLine = [];
 		this.directionEl = [];
-		this.countDirection = 25;
+		this.countDirection = 45;
 		this.positionElement = [];
 		this.colorElement = [];
 		this.colorEl = 'rgb(255 255 255)';
-		this.countElement = 150;
-		this.step = 10;
+		this.countElement = 10;
+		this.step = 5;
 		this.stepCompleted = [];
 		this.honeycombs = true;
-		this.speed = 4;
+		this.speed = 2;
 	}
 	getRandom(min, max) 
 	{
@@ -37,18 +37,18 @@ class Life {
 	}
 	draw()
 	{
-		this.ctx.shadowColor = '#000';
+		this.ctx.shadowColor = '#FB6D3A';
 		this.ctx.shadowBlur = 2;
 		
 		
 		for (let i = 0; i < this.positionElement.length; i++) {
-			this.ctx.fillStyle = '#000';
+			this.ctx.fillStyle = '#FB6D3A';
 			this.ctx.fillRect(this.positionElement[i].x-this.elwc, this.positionElement[i].y-this.elhc, this.elw, this.elh);
 		}
 		
-		this.ctx.shadowColor = '#000';
+		this.ctx.shadowColor = '#FB6D3A';
 		this.ctx.shadowBlur = 0;
-		this.ctx.fillStyle = 'rgb(229 229 229 / 1%)';
+		this.ctx.fillStyle = 'rgb(229 229 229 / 5%)';
 		this.ctx.fillRect(0, 0, this.w, this.h);
 	}
 	move()
