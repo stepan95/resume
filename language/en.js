@@ -45,10 +45,23 @@ const en = {
 	<ul>
 		<li><p>Advanced Custom Fields</p></li>
 		<li><p>Contact Form 7</p></li>
+		<li><p>WPForms Lite</p></li>
 		<li><p>Polylang</p></li>
 		<li><p>Duplicator</p></li>
 		<li><p>WP Rocket</p></li>
 		<li><p>Yoast SEO Premium</p></li>
+		<li><p>Elementor</p></li>
+		<li><p>Anywhere Elementor</p></li>
+		<li><p>Polylang Connect for Elementor</p></li>
+		<li><p>Chat Button by GetButton.io</p></li>
+		<li><p>Duplicate Page</p></li>
+		<li><p>SVG Support</p></li>
+	</ul>
+	<h3>Theme</h3>
+	<ul>
+		<li><p>Astra</p></li>
+		<li><p>Extra</p></li>
+		<li><p>Self-written decisions, etc.</p></li>
 	</ul>
 	`,
 	openCart: `
